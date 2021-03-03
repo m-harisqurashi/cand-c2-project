@@ -1,0 +1,14 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon EC2,0,1479.56,17754.72,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Compute Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (c5.4xlarge)"
+My Estimate,US East (Ohio),,Amazon EC2,0,740.51,8886.12,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Compute Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t3.2xlarge)"
+My Estimate,US East (Ohio),,Amazon RDS for MySQL,0,2022.28,24267.36,USD,"Storage for each RDS instance (Provisioned IOPS SSD (io1)), Storage amount (100 GB), Quantity (1), Instance type (db.m5.4xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,77.85,934.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),,S3 Standard,0,11.5,138,USD,S3 Standard storage (500 GB per month)
+My Estimate,US East (Ohio),,Amazon Route 53,0,938,11256,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+My Estimate,US East (Ohio),,Application Load Balancer,0,2060.43,24725.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),,Network Load Balancer,0,896.81,10761.72,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour), Processed bytes per NLB for TLS (100 GB per hour), Average number of new TCP connections (1 per second), Average TCP connection duration (1 seconds), Processed bytes per NLB for UDP (1 GB per hour), Average number of new UDP Flows (1 per second), Average UDP Flow duration (1 seconds), Average number of new TLS connections (1 per second), Average TLS connection duration (1 seconds)"
+,,,,,,,,
+,,,,Total,8226.94,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,

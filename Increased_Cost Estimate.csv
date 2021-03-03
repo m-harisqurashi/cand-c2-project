@@ -1,0 +1,18 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon EC2,0,1479.56,17754.72,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Compute Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (c5.4xlarge)"
+My Estimate,US East (Ohio),,Amazon EC2,0,740.51,8886.12,USD,"Operating system (Linux), Quantity (4), Pricing strategy (Compute Savings Plans 1 Year No Upfront), Storage amount (100 GB), Instance type (t3.2xlarge)"
+My Estimate,US East (Ohio),,Amazon RDS for MySQL,0,4224.56,50694.72,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (500 GB), Quantity (2), Instance type (db.m5.4xlarge), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,155.7,1868.4,USD,Number of NAT Gateways (2)
+My Estimate,US East (Ohio),,S3 Standard,0,11.5,138,USD,S3 Standard storage (500 GB per month)
+My Estimate,US East (Ohio),,Amazon Route 53,0,938.5,11262,USD,"Hosted Zones (2), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10)"
+My Estimate,US East (Ohio),,Application Load Balancer,0,8792.85,105514.2,USD,Number of Application Load Balancers (2)
+My Estimate,US East (Ohio),,Network Load Balancer,0,1793.61,21523.32,USD,"Number of Network Load Balancers (2), Processed bytes per NLB for TCP (100 GB per hour), Processed bytes per NLB for TLS (100 GB per hour), Average number of new TCP connections (100 per second), Average TCP connection duration (1 seconds), Processed bytes per NLB for UDP (1 GB per hour), Average number of new UDP Flows (1 per second), Average UDP Flow duration (1 seconds), Average number of new TLS connections (100 per second), Average TLS connection duration (1 seconds)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,EC2: Updated pricing strategy & storage amount for application and web servers
+,,,,,,,,RDS: Increased number of instances from 1 to 2. One master per availability zone 
+,,,,,,,,VPC: Increased number of NAT Gateways from 1 to 2. One per availability zone 
+,,,,,,,,ALB: Increased number of processed bytes for Lamda functions & (EC2 and IP) 
+,,,,,,,,NLB: Increased number of processed bytes for NLB for TCP & TLS
+,,,,,,,,Increased ALB & NLB from 1 to 2. One per availability zone 
+,,,,,,,,Multi-hosted Route-52 with increased Network Interfaces & basic checks within AWS
