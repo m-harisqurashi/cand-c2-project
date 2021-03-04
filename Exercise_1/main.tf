@@ -6,17 +6,25 @@ provider "aws" {
 resource "aws_instance" "Udacity-T2" {
     count = 4
     instance_type = "t2.micro"
-    subnet_id = "subnet-xxxx"
-    vpc_security_group_ids = ["sg-xxxx"]
+    subnet_id = "subnet-06ba7b6695f130fea"
+    vpc_security_group_ids = ["sg-0b2e62dc50887d136"]
     ami = "ami-0915bcb5fa77e4892" # Amazon Linux 2 AMI (HVM), SSD
+
+    tags = {
+      Name = "Udacity-T2"
+    }
 }
 
 resource "aws_instance" "Udacity-M4" {
     count = 2
     instance_type = "m4.large"
-    subnet_id = "subnet-xxxx"
-    vpc_security_group_ids = ["sg-xxxx"]
+    subnet_id = "subnet-06ba7b6695f130fea"
+    vpc_security_group_ids = ["sg-0b2e62dc50887d136"]
     ami = "ami-0915bcb5fa77e4892" # Amazon Linux 2 AMI (HVM), SSD
+
+    tags = {
+      Name = "Udacity-M4"
+    }
 }
 
 # terraform destroy -target=aws_instance.Udacity-M4[0]
